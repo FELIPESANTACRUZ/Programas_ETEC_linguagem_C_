@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () 
+{									
+	int idade;
+	
+	printf (" Digite sua idade : \n");
+	scanf ("%i",&idade);
+	
+	if (idade >=18 ){ // NÃO COLOCAR PONTO E VÍRGULAAA QUANDO FOR ABRIR CHAVES PARA EXECUTAR !!!
+	printf (" usuario MAIOR de idade\n");
+					}
+	else 			{
+	
+	printf (" usuario MENOR  de idade\n");
+					}
+	
+	
+	return 0;
+}

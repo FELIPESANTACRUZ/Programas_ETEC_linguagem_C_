@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () 
+{
+	
+int contador;
+
+for (contador = 1; contador <= 5; contador = contador +1) { // CONTADOR = CONTADOR +1 = PERCEBA QUE O '+1' TEM SER COLADO SENAO NAO FAZ O LOOP
+
+	printf ("TESTE \n");
+	
+
+															}
+
+
+
+
+
+return 0;
+}

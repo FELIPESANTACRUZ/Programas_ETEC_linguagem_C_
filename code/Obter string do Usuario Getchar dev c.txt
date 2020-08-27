@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+
+
+int main (void){
+
+setlocale(LC_ALL, "portuguese");
+
+char linha[100]; //[30] = armazena ate 30 characters.
+char character; 
+int i=0;
+
+	do{ character = getchar();
+	linha[i] = character;
+	++i;	
+	}
+	while(character != '\n');
+		linha [i - 1] = '\0';
+	
+	printf ("%s\n",linha);
+
+system ("pause");
+
+return 0;
+
+}

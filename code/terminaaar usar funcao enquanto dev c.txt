@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () 
+{
+	
+int adicao,subtracao,divisao,multiplicacao,num1,num2,resultado;
+
+
+
+
+printf (" Digite o primeiro numero ");
+scanf ("%i",&num1);
+
+printf (" Digite o segundo numero ");
+scanf ("%i",&num2);
+
+
+	
+	resultado = num1 + num2;
+	
+printf (" a soma e :%i",resultado);
+	
+
+
+
+
+	
+return 0;	
+	
+}

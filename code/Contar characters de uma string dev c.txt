@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void){
+	
+setlocale (LC_ALL, "portuguese");
+
+int tamanhostring (char string[]);	
+char stringusuario[20];
+
+printf ("Digite uma palavra (string):\n");
+scanf ("%s",stringusuario); //aqui eu converti a variavel tipo char para uma string '%s'.
+	
+int num = tamanhostring(stringusuario);	
+	
+	printf ("A string %s possui %i characters \n",stringusuario, // A string sempre no final tem o espeço \0,exemplo a palavra 'casa' na verdade possui 5 characters 
+												  num);			// pois na memoria o '\0' está alocado,mas na minha função no ciclo while eu não o executei o ultimo character.
+	
+	system("pause");
+	
+	return 0;
+}
+int tamanhostring(char string[]){
+	
+	int numcharacters =0;
+	
+	while (string[numcharacters] != '\0'){
+		++numcharacters;
+	}
+	return numcharacters;
+	
+}

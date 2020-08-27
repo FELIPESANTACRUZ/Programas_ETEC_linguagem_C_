@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main ()
+{
+	
+int num;
+
+for (num = 1; num <= 5; num = num +1) { // CONTANDO DE 1 EM 1 ATE 5
+
+	printf (" %i",num,"+","%i",num,"%i",num); //SINTAXE PARA MOSTRAS ALINHADO OS NUMEROS
+														  }						
+
+return 0;	
+	
+}

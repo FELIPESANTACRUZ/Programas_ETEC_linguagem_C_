@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void){
+	
+setlocale (LC_ALL, "portuguese");
+
+	float calculararearetang (float x,float y);//chamo a função.
+	
+	float area = calculararearetang(10.0, 20.0);//atribui 10.0=base e 20.0=altura.
+	
+	printf ("\t A area do retângulo é :%f\n\t",area);
+	
+																		//PODE SE CHAMAR O TIPO DE VARIAVEL QUE QUISER,float,int,double,char.
+	
+	
+system ("pause");	
+	
+return 0;	
+}
+
+float calculararearetang (float base,float altura) {//criando função. obs:o primeiro float indica que tipo de variavel eu vou retornar ,se e numero inteiro,caractere.
+
+	float area = base * altura;//pedindo para fazer o calculo do parâmetro que passe na função main. SEMPRE DECLARAR AS VARIAVEIS NA FUNÇÃO DE ESCOPO LOCAL.
+	
+	return area;//retorna o valor na função main.
+}

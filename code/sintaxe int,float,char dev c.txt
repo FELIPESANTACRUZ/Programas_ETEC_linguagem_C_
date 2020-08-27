@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () 
+{
+	
+int inteira = 10;
+float decimal = 10.5;
+char caractere = 'a';
+
+printf ("O numero inteiro e : %i\n",inteira);
+printf ("O numero decimal e : %f \n",decimal);
+printf ("O caractere e : %c \n",caractere);
+	
+	
+	
+	
+	
+	
+return 0;
+}

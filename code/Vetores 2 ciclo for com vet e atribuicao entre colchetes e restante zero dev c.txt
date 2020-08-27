@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void)
+{
+setlocale(LC_ALL, "portuguese");
+
+int vetor[5] = {5, 2},i; //Declarando o numero final do vetor igual a ele mesmo entre colchetes ,ele atribui o valor para a primeira linha do vetor e atribui 0 para todo restante
+					// e com uma vírgula voce pode colocar na ordem as atribuições no caso do exemplo o numero 2 ,e o restante fica zero 
+
+for (i=0;i<=4;++i){  //Ciclo for para mostrar o vetor em todos seus endereços.
+	
+	printf ("%i\n",vetor[i]);
+}
+	
+	
+	
+system ("pause");
+	
+return 0;
+}
+	

@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+														//INTRODUÇÃO ESTRUTURAS
+int main (void){
+
+setlocale (LC_ALL, "portuguese");
+
+struct horario { //Aqui e assim faz a definição da estrutura chamada "horario".
+	int horas;
+	int minutos;
+	int segundos;
+};
+
+struct horario agora; //Aqui e assim faz a declaração de uma estrutura chamada "agora". //SINTAXE PARA CHAMAR OS MEMBROS DAS VARIAVEIS DA ESTRUTURA É COLOCANDO UM PONTO ENTRE
+	agora.horas = 11; //inicialização dos membros das variaveis da estrutura			O NOME DA DEFINIÇÃO DA ESTRUTURA E O NOME DA DECLARAÇÃO DA ESTRUTURA = EX:agora.horas
+	agora.minutos = 06; //inicialização dos membros das variaveis da estrutura
+	agora.segundos = 32; //inicialização dos membros das variaveis da estrutura
+
+
+printf ("HORÁRIO:%i:%i:%i\n\t",agora.horas,agora.minutos,agora.segundos);
+
+
+
+system ("pause");
+
+return 0;
+}

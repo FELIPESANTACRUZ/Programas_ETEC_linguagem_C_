@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void)
+{
+setlocale(LC_ALL, "portuguese");
+
+int matriz[3][3] ={{1, 2, 3} ,/* SINTAXE E MANEIRA DE SE DECLARAR MATRIZES */            //outra sintaxe e  maneira de declarar  = matirz [3][3] = {1, 2, 3, 4, 5, 6, 7, 8 , 9};
+				   {4, 5, 6},
+				   {7, 8, 9}};                                                   
+				  
+
+printf ("%i\t",matriz[1][2]); // "/t" só lembrando ele da um espaço // // "/n" pula uma linha.
+
+
+
+
+	
+system ("pause");
+	
+return 0;
+}

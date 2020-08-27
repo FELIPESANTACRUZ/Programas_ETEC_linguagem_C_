@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void){
+	
+setlocale (LC_ALL, "portugues");																	
+
+
+float bimestreatual(float n1,float n2);								//SEMPRE DECLARAR TUDO DA FUNÇÃO POR PARAMETRO NA FUNÇÃO MAIN!
+
+	float media = bimestreatual(10,5); // declarei por parametro "float media",depois coloquei o sinal de "=" e vou receber a função com os parametros
+										//que indiquei na função main que sao nota1=10 e nota2 = 5.
+	printf ("\nA media do aluno e de :%f\t", media);
+	
+	system ("pause");
+	
+	return 0;
+}
+
+float bimestreatual(float nota1,float nota2){
+
+  float	media = (nota1 + nota2 )/ 2;
+  
+  return media;
+}

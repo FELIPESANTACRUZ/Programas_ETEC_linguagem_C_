@@ -1,0 +1,37 @@
+#import <stdio.h> //mesma coisa do "inlcude".
+#include <stdlib.h>
+#include <locale.h>
+
+int gVariavelglobal = 3; //delacrando a variavel antes da função main nem função local ela é uma variavel global e consigo acessa-la na função main e local tbm. 
+ 				//sempre que criar uma variável global colocar uma letra "g"(de global) minuscula ante do nome da variavel para diferenciar.
+int main (void){
+	
+setlocale (LC_ALL, "portugues");
+
+	void teste (void);
+	
+	printf ("\n Variavel Global é igual a :%i\n\t",gVariavelglobal); //dando printf na função main e local eu consigo acessar essa variavel pois está na variavel global
+	teste();
+	teste();
+	teste();
+	gVariavelglobal *= 2;
+	printf ("\n Variavel Global é igual a :%i\n\t",gVariavelglobal); //chamei a variavel global = 3 * 2 = 6 e essa variavel e estatica pois ela guarda na memoria global.
+
+
+system ("pause");
+
+return 0;
+}
+
+void teste (void){
+	
+	int variavelautomatica = 2;
+	variavelautomatica *= 2; //a cada vez que chamo a função local na função main essa variavel zera.
+	
+	static int variavelestatica = 2; //sintaxe para deixar uma variavel local a cada vez que for chamada guardar o valor  na memoria na função main.
+	variavelestatica  *= 2;
+	
+	printf ("\n Variavel Automatica é igual a :%i\n\t",variavelautomatica);
+	printf ("\t Variavel Estatica igual a :%i\n\t",variavelestatica);
+	printf ("\n Variavel Global é igual a :%i\n\t",gVariavelglobal); //dando printf na função main e local eu consigo acessar essa variavel pois está na variavel global.
+}

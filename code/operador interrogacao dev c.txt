@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main ()
+{																/* PROGRAMA COMO UTILIZAR OPERADOR CONDICIONAL "?" % */
+ int num1=10,num2=20,resposta;	
+	
+setlocale(LC_ALL, "portuguese");	
+
+num1 < num2 ? printf (" sim \n") : printf (" nao "); // lê= numero 1 e menor que numero 2 ?, se for escreva "sim", se nao for escreva "não".
+
+num1 < num2 ? resposta = 10 : resposta = -10;//lê= numero 1 e menor que o numero 2 ?, se for resposta recebe "10" ,se não for resposta recebe "-10"
+
+printf ("%i",resposta);
+
+return 0;	
+}

@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () 
+{										//WHILE = ENQUANTO
+	int contador=10;
+	
+	while (contador >9) //NÃO COLOCAR PONTO E VÍRGULA NA LINHA DO WHILE ,SENAO ELE NAO RODA
+	 {
+		printf(" HELLO WORLD!\n");
+	}
+	return 0;
+}

@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void){
+	
+setlocale (LC_ALL, "portuguese");
+
+
+int idade;
+
+printf ("\n\tDigite sua idade : ");
+scanf ("%i",&idade);
+
+if (idade >= 18 && idade <= 45){ //se atentar a chamada sempre da variavel antes da condição.
+	printf ("\nPode tirar a carteira de habilitação\n");
+}
+else if (idade < 18 || idade >10){
+	printf ("\nJIdade não permitida para tirar carteira de habilitação.\n");
+}
+
+system("pause");
+
+return 0;
+}

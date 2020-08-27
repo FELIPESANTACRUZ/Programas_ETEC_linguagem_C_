@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void){
+	
+setlocale(LC_ALL, "portuguese");
+
+	
+printf ("\thttps://github.com/FELIPESANTACRUZ\n");
+
+		
+getchar(); //getchat é semelhante ao system("pause") mas ele é da linguagem C em si.esse comando roda em linux.e mac é universal pois vem da linguagem.	
+ // o system("pause") é um comando que vem de system()=sistema do Dos .ou seja so funciona no dev c++ que é para windowns. utilizar o getchar pois ele
+ // é uma das boas práticas de programação.
+	return 0;
+}

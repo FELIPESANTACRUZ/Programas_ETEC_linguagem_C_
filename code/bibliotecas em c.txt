@@ -1,0 +1,94 @@
+#include<stdio.h>
+#include<conio.h>
+int main(void)
+{
+char nome[61];
+printf("Digite seu nome: ");
+scanf("%s",nome);
+printf("O nome armazenado foi: %s", nome);
+
+return 0;
+} 
+/* 
+
+
+Nome do arquivo
+
+Descrição do arquivo de cabeçalho
+
+Disponibilidade a partir do padrão
+
+<assert.h>
+
+Implementa ajuda na detecção de erros em versões de depuração de programas.	
+<complex.h>
+
+Trata da manipulação de números complexos. – Até aqui	C99
+<ctype.h>
+
+Funções para conversão de maiúsculas, minúsculas e outros tratamentos de caracteres.	
+<errno.h>
+
+Teste de códigos de erro reportados pelas funções de bibliotecas.	
+<fenv.h>
+
+Define várias funções e macros para tratar de exceções em variáveis do tipo ponto flutuante.	C99
+<float.h>
+
+Define limites e precisão de variáveis de ponto flutuante.	
+<inttypes.h>
+
+Trata de conversão precisa entre tipos inteiros.	C99
+<iso646.h>
+
+Adiciona a possibilidade de programação usando a codificação de caracteres¨de acordo com a ISO646.	NA1
+<limits.h>
+
+Constantes de propriedades específicas de implementação da biblioteca de tipos inteiros, como a faixa de números que pode ser representada (_MIN, _MAX).	
+<locale.h>
+
+Especifica constantes de acordo com a localização específica, como moeda, data, etc.	
+<math.h>
+
+Funções matemáticas comuns em computação.	
+<setjmp.h>
+
+Define as macros setjmp e longjmp, para saídas não locais e tratamento de execeções.	
+<signal.h>
+
+Implementa definições para receber e fazer o tratamento de sinais.	
+<stdarg.h>
+
+Acesso dos argumentos passados para funções com parâmetro variável.	
+<stdbool.h>
+
+Trata da definição para tipo de dados booleano.	C99
+<stdint.h>
+
+Padrões de definição de tipos de dados inteiros.	C99
+<stddef.h>
+
+Padrões de definições de tipos.	
+<stdio.h>
+
+Tratamento de entrada/saída.	
+<stdlib.h>
+
+Implementa funções para diversas operações, incluindo conversão,  alocação de memória, controle de processo, funções de busca e ordenação.	
+<string.h>
+
+Tratamento de  strings.	
+<tgmath.h>
+
+Implementa facilidades para utilização de funções matemáticas.	C99
+<time.h>
+
+Trata de tipos de data e hora.	
+<wchar.h>
+
+Tratamento de caracteres para suportar diversas línguas.	NA1
+<wctype.h>
+
+Contém funções para classificação de caracteres wide.	NA1
+
+*/  

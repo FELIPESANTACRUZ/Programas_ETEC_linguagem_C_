@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () 
+{
+int contador = 1;
+
+	while (contador <=5) // = (um igual) é atribução , == (dois sinais de igual) é comparaçao se e igual
+{
+	printf ("%i\n",contador);	
+	++ contador	; // contador = contador + 1 = pode se usar tbm
+		
+}	
+	
+	
+	
+return 0;
+}

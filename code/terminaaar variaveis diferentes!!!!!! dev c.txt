@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main ()
+{																/*  COMO UTILIZAR VARIAVEIS BOLL,LONG INT,DOUBLE */
+int nome;	
+	
+setlocale(LC_ALL, "portuguese");	
+
+/* bool variavelboll = true
+printf ("%i",variavelbool);               /observe que para chamar a variavel boll usa "%i" igaul a variavel do tipo int.
+*/
+
+
+/* long int variavelint = 32517783989231 	/para alocar mais espaço na memoria dentro da variável.
+printf (variaveint);					
+scanf ("%i",&variavelint);
+*/
+
+/*
+const int variavelint = 10		/variavel que nao muda de valor,e fixo desde sua declaração.
+printf ("\n"%i,variavelint); 
+scanf ("%i",&variavelint);
+*/
+
+
+/*
+double variaveldouble = 10.10			/alocar mais espaço na memoria e a precisão depois da vírgula é maior do que a variavel do tipo float.
+printf ("%lf",variaveldouble);	/repare que para ler usa o comando "%lf",&  e para escrever é "%f" igual variavel do tipo float.
+scanf ("%f"&variaveldouble);
+*/
+
+/*
+const variaveldouble = 10.10			/variavel do tipo double constante.
+printf ("%lf",variaveldouble);	/repare que para ler usa o comando "%lf",&  e para escrever é "%f" igual variavel do tipo float.
+scanf ("%f"&variaveldouble);
+*/
+
+
+/*
+unsigned double variaveldouble = 10.10			/unsigned = "sem sinal"(do inglês) = aloca na variavel do tipo double so numeros positivivos.
+printf ("%f",variaveldouble);	/repare que para ler usa o comando "%lf",&  e para escrever é "%f" igual variavel do tipo float.
+scanf ("%lf"&variaveldouble);
+*/
+  
+  // EXISTEM MAIS TIPOS DE VARIAVEIS E LEMBRANDO QUE PODEMOS INTRODUZIR LONG,UNSIGNED,LONG LONG INT, BRINCAR COM TODOS OS TIPO DE VARIAVEIS DE ACORDO COM OQUE QUEREMOS EM NOSSO PROGRAMA.
+
+return 0;	
+}

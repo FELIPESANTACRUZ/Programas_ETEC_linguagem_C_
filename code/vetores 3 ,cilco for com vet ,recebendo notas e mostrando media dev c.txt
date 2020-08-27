@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void)
+{
+setlocale(LC_ALL, "portuguese");
+
+int nota[3]= {0},media; // quando coloco o zero atribui 0 a todos os espeços do vetor e inicializa todas notas com zero,e assim o usuario pode atribuir o valor que quer a cada nota.
+
+for (int contador = 0;contador < 3;++contador){
+	printf ("Digite a nota \n");
+	scanf ("%i",&nota[contador]);	
+}
+
+for (int contador2 = 0;contador2 < 3;++contador2){
+	printf ("A nota é : %i\n",nota[contador2]);
+}
+
+media = nota[0]+ nota[1] + nota[2];
+
+media = media / 3; // A MÉDIA SEMPRE É DIVIDIDA PELO TOTAL DE NOTAS CONTADAS.
+
+printf ("\n\t A média das notas foi %i\n\n",media);	
+
+	
+system ("pause");
+	
+return 0;
+}
+	

@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void){
+
+setlocale(LC_ALL, "portuguese");
+/* formas de declarar character por character */
+ //char palavra [6]= {'B','r','a','s','i','l'}; //essa forma com apostrofo é para declarar character por character//não é uma sring.
+// char palavra []=  {'B','r','a','s','i','l'}; //essa forma com apostrofo é para declarar character por character//não é uma sring.
+ /* formas de declarar uma string */
+ //char palavra [7]= {"Brasil"};{"Brasil\0"}= e assim que executa no programa com strings aparece sempre esse character nulo no final.//para fazer uma string e somente entre com aspas.
+//char palavra []= {"Brasil"};  //mas nao precisa colocar "\0" pois o programa coloca sozinho mas nao fica visivel no programa.
+char palavra []= "Brasil";
+
+// \0 = character nulo no final de uma string.
+// \0= e igual pra fechar cabeçalho de html coloca a barra so que essa e "\" invertida e o zero pra dizer pro programa que fechou a string.
+printf ("%s\n",palavra); // %s= chamar string.
+
+/* Diferença de gets e getch
+gets (tring) -> para string.
+getch (ar) -> para caracteres.
+*/	
+system ("pause");	
+	
+	return 0;
+}
+ 

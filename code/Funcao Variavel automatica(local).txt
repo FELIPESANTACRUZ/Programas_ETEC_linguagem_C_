@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void){
+	
+setlocale (LC_ALL, "portugues");	
+
+
+	void teste (void);
+
+	teste();  //chamei a funçao e o resultado 4 nao guarda no escopo global so no escopo local.
+	teste(); //chamei a funçao e o resultado 4 nao guarda no escopo global so no escopo local.															
+
+
+system ("pause");
+
+return 0;
+}
+
+void teste (void){
+	int variavelautomatica = 2;			//essa variavel so armazena no escopo local,quando vc chama ela pra função main ela retorna ao valor de inicio declarado.
+	variavelautomatica *= 2;   //variavel = variavel * 2.
+	printf ("\t A variavel Autimatica é igual a :%i\n\t",variavelautomatica);
+																					//Perceba que não coloquei o return da função.
+}

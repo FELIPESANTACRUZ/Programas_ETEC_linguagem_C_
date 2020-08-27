@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+struct horario{
+	int horas;
+	int minutos;
+	int segundos;	
+	}agora;
+
+int main (void){									//PASSAR E RECEBER ESSTRUTURAS A UMA FUNÇÃO
+	
+setlocale(LC_ALL, "portuguese");
+	
+	struct horario{
+	int horas;
+	int minutos;
+	int segundos;	
+	}agora; //colocando a variavel da estrutura depois de "}" eu nao preciso escrever "struct horario agora;",eu ja vou declarando as atribuições dos elementos.
+//ex:}agora, proxima, depois etc.. eu posso declarar dessa forma quantas variaveis eu quiser pra aquela mesma estrutura apenas colocando o nome e a virgula. e 
+	agora.horas = 10;						//depois chamalas cada uma ex: proxima.horas =32;
+	agora.minutos = 42;						//							   proxima.minutos= 21;
+	agora.segundos = 58;					//							   proxima.segundos=55; e etc.. 
+	
+/*	struct horario{
+	int horas;
+	int minutos;
+	int segundos;	
+	}agora = {10,20,30}; sintaxe e Assim eu faço atribuições aos meus elementos sem fazer agora.horas=10, agora.minutos=42, agora.segundos = 58. */
+
+	printf ("Hrs=%i\tMin=%i\tSeg=%i\n",agora.horas,
+					agora.minutos,
+					agora.segundos);
+					
+	system ("pause");
+	
+	return 0;
+}

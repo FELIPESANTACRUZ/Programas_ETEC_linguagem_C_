@@ -1,0 +1,40 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<stdbool.h>
+#include<locale.h>
+
+bool parouimpar(int num){
+    bool retorno = true;
+	if (num%2==0){
+	retorno = false;
+	}
+	return retorno;	
+}
+
+int main (void){  //true =impar false=par
+
+setlocale(LC_ALL, "portuguese");
+
+int num1;
+bool retornomain;
+
+bool parouimpar(int num);
+
+printf ("\n\tDigite um numero :\n");
+scanf("%i",&num1);
+
+ retornomain = parouimpar(num1);
+	
+	if (retornomain == true){
+		printf ("\n\tO numero é IMPAR\n");
+	}
+	else{
+		printf ("\n\tO numero é PAR\n\n");
+	}
+	
+	
+	
+	
+system("pause");	
+
+}

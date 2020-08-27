@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+
+
+int main (void){
+	
+setlocale (LC_ALL, "portuguese");
+
+
+char teste[]={'b','r','a','s','i','l'}; //inicialização de String ,conceito básico. string=cadeia de characters
+
+int i;
+
+for (i=0;i < 6;++i){
+	printf ("\t%c\t\n",teste[i]); //fazendo o ciclo for só para mostrar as atribuçoes de characters para o vetor "teste".
+}
+
+
+system("pause");
+
+return 0;
+
+}

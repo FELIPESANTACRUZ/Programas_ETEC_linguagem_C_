@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h> //incluir acentuação 
+
+int main ()
+{
+	
+int i;
+
+ setlocale(LC_ALL, "portuguese"); //incluir acentuação
+ 
+printf (" digite um numero de 1 a 5 :");
+scanf ("%i",&i);
+
+switch (i){
+	
+	case 1:
+	printf (" primeiro numero \n");
+	break;
+	case 2:
+	printf (" segundo numero \n");
+	break;
+	case 3:
+	printf (" terceiro numero \n");
+	break;
+	case 4:
+	printf (" quarto numero \n");
+	break;
+	case 5:
+	printf (" quinto numero ");
+	break;
+	default:
+	printf ("opção nao valida! "); // utiliza dfault: para se o usuario digitar qualquer valor diferente de um dos casos 
+	break;
+	
+}
+	
+	return 0;
+}

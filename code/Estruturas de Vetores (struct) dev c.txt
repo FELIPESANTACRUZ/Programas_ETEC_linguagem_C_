@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+struct horario{
+	int hh;
+	int mm;
+	int ss;
+};
+
+int main  (void ){
+	
+setlocale(LC_ALL, "portuguese");
+
+	void receberHorarios(struct horario list[5]);
+	void printHorarios (struct horario list[5]);
+	struct horario listaHorarios[5];
+	receberHorarios(listaHorarios);
+	printHorarios(listaHorarios);	
+	
+	system ("pause");
+	
+	return 0;
+}
+	void receberHorarios(struct horario lista[5]){
+		int cont;
+		for (cont=0;cont <5;++cont){
+			printf ("\n\tDigite o Horario (hh:mm:ss):\n",cont + 1);
+			scanf ("%i:%i:%i",&lista[cont].hh,
+							&lista[cont].mm,
+							&lista[cont].ss);
+			
+		}
+		
+	}
+	void printHorarios (struct horario lista[5]){
+		int cont2;
+		for (cont2=0;cont2 <5;++cont2){
+			printf ("O Horário é : %i:%i:%i\n",cont2 + 1,
+			                                          lista[cont2].hh,
+							                          lista[cont2].mm,
+							                          lista[cont2].ss);
+			
+		
+	};
+}

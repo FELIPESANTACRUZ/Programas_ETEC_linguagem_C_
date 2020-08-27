@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () 
+{									
+  int idade;													
+  
+  printf (" Digite sua idade ");
+  scanf ("%i",&idade);
+  
+  if (idade <= 5)
+  	printf ("BEBE\n" );//SO COLOCAR PONTO E VÍRGULA NO FIM DO SE OU SEJA DEPOIS DE EXECUTAR O PRINTF
+  
+ else if (idade > 5 && idade <= 10)
+ 	printf (" CRIANCA\n"); //SO COLOCAR PONTO E VÍRGULA NO FIM DO SE OU SEJA DEPOIS DE EXECUTAR O PRINTF
+ 
+ else if (idade >10 && idade <= 18)
+ 	printf (" ADOLESCENTE\n");//SO COLOCAR PONTO E VÍRGULA NO FIM DO SE OU SEJA DEPOIS DE EXECUTAR O PRINTF
+ 	
+ else if (idade >18 && idade <= 50)
+ 	printf (" ADULTO\n ");//SO COLOCAR PONTO E VÍRGULA NO FIM DO SE OU SEJA DEPOIS DE EXECUTAR O PRINTF
+ 	
+ 	else
+ 	printf ("IDOSO\n");//SO COLOCAR PONTO E VÍRGULA NO FIM DO SE OU SEJA DEPOIS DE EXECUTAR O PRINTF
+ 

@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void){
+	
+setlocale (LC_ALL, "portuguese");
+	
+	
+
+	printf ("De aluno\0para aluno"); // o comando '\0' que significa o final de uma string(character nulo),no printf ele e um limitador. note que quando colocado ele 
+									  // a string e mostrada so ate o '\0'.
+	/*	
+Sequência Escape	Representação
+ \a	 Sinal sonoro (alerta)
+ \b	 Backspace ,move o cursosr uma posição a esquerda.
+ \f	 Alimentação de formulário
+ \n	 Nova linha
+ \r	 Carriage return ,move o cursor para o inicio da linha.
+ \t	 Tabulação horizontal
+ \v	 Tabulação vertical
+ \'	 Aspas simples,mostra aspas simples dentro de um apostofro.
+ \"	 Aspas duplas ,mostrar aspas dentro do printf.
+ \\	 Barra invertida
+ \?	 Interrogação
+ \ ooo	 Caractere ASCII na notação octal
+ \x hh	 Caractere ASCII na notação hexadecimal
+ \x hhhh	 Caractere Unicode na notação hexadecimal.
+ */
+ 
+ 	getchar ();
+	
+	return 0;
+}

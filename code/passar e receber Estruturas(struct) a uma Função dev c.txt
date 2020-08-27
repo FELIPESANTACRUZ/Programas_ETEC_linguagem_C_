@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+struct horario{
+	int horas;
+	int minutos;
+	int segundos;	
+	};
+
+int main (void){									//PASSAR E RECEBER ESSTRUTURAS A UMA FUNÇÃO
+	
+setlocale(LC_ALL, "portuguese");
+	
+	struct horario teste(struct horario x); //minha função "teste" vai receber como argumento a estrutura "x"(passagem por referencia do identificador horario) e vai retornar o identificador horario.
+	
+	struct horario agora;
+	agora.horas = 10;
+	agora.minutos = 42;
+	agora.segundos = 58;
+	
+	struct horario proxima;
+	proxima = teste (agora); //estou chamando a minha função "teste" e a minha variavel "agora" que tem a estrututa horario como elementos.
+	
+	printf ("Hrs=%i\tMin=%i\tSeg=%i\n",proxima.horas,
+					proxima.minutos,
+					proxima.segundos);
+					
+	system ("pause");
+	
+	return 0;
+}
+	struct horario teste(struct horario x){
+	
+	printf ("Hrs=%i\tMin=%i\tSeg=%i\n",x.horas,
+					x.minutos,
+					x.segundos);
+					
+	x.horas = 100;
+	x.minutos=100;
+	x.segundos=100;
+		
+	return x;		
+	}
+

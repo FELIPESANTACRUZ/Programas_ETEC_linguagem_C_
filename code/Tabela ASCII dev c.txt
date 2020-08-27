@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void){
+	
+setlocale (LC_ALL, "portuguese");
+	
+int x = 97;	
+printf ("%c",x); //exemplo tabela ASCII ,conversão Binária para letras e characters especiais.
+
+ //exemplo de mostar letras em minusculo so é possível por causa da tabela ascii pois ela é código binário e consegue fazer o comprarativo .
+ 	getchar ();
+	
+	return 0;
+}

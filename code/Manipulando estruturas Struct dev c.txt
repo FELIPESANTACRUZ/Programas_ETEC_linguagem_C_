@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+														//INTRODUÇÃO ESTRUTURAS
+int main (void){
+
+setlocale (LC_ALL, "portuguese");
+
+struct horario { //Aqui e assim faz a definição da estrutura chamada "horario".
+	int horas;
+	int minutos;
+	int segundos;
+	double teste;
+	char letra;
+};
+
+struct horario agora; //Aqui e assim faz a declaração de uma estrutura chamada "agora". //SINTAXE PARA CHAMAR OS MEMBROS DAS VARIAVEIS DA ESTRUTURA É COLOCANDO UM PONTO ENTRE
+	agora.horas = 11; //inicialização dos membros das variaveis da estrutura			O NOME DA DEFINIÇÃO DA ESTRUTURA E O NOME DA DECLARAÇÃO DA ESTRUTURA = EX:agora.horas
+	agora.minutos = 06; //inicialização dos membros das variaveis da estrutura
+	agora.segundos = 32; //inicialização dos membros das variaveis da estrutura
+	
+	struct horario depois;
+	depois.horas= agora.horas + 10;
+	depois.minutos=agora.minutos;
+	depois.teste= 50.43 /155; //da para declarar variavel dentro da estrutura tipo double.
+	depois.letra= 'Felipe'; //da para delacar variavel dentro da estrutra do tipo char.            //e de todos os tipos.
+	
+	
+
+
+printf ("HORÁRIO :%i:%i:%i\n\t",agora.horas,agora.minutos,agora.segundos); //dar printf pulando linha normal mas fazendo o comando usando um printf só.
+
+printf ("HORARIO 2 :\t%i\n",depois.horas);
+printf ("HORARIO 2 :\t%i\n",depois.minutos);
+printf ("HORARIO 2 :\t%d\n",depois.teste);
+printf ("HORARIO 2 :\t%c\n",depois.letra);
+
+
+
+
+system ("pause");
+
+return 0;
+}

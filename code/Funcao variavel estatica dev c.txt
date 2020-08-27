@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void){
+	
+setlocale (LC_ALL, "portugues");
+
+	void teste (void);
+	
+	teste();
+	teste();
+	teste();
+	
+
+
+system ("pause");
+
+return 0;
+}
+
+void teste (void){
+	
+	int variavelautomatica = 2;
+	variavelautomatica *= 2; //a cada vez que chamo a função local na função main essa variavel zera.
+	
+	static int variavelestatica = 2; //sintaxe para deixar uma variavel local a cada vez que for chamada guardar o valor  na memoria na função main.
+	variavelestatica  *= 2;
+	
+	printf ("\n Variavel Automatica é igual a :%i\n\t",variavelautomatica);
+	printf ("\t Variavel Estatica igual a :%i\n\t",variavelestatica);
+	
+}
+

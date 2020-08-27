@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () 
+{
+	
+float num1,num2,resultado;
+	
+printf (" Digite um numero :\n");
+scanf ("%f",&num1);
+
+printf (" Digite outro numero :\n ");
+scanf ("%f",&num2);
+
+resultado = num1/num2;
+
+printf (" a divisao e : %f ",resultado);
+	
+	
+	
+	
+return 0;
+}

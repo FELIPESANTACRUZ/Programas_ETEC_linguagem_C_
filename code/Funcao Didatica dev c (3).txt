@@ -1,0 +1,71 @@
+Utilizando Função.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+int main (void){
+	
+	
+setlocale (LC_ALL, "portuguese");
+
+int a=3,b=5;
+
+	int soma(int a,int b); //Declaro a função
+
+	soma (a,b);//Chamo a função.
+
+
+
+
+
+
+system ("pause");
+
+return 0;
+}
+int somanumeros;
+int soma (int a,int b){ //parametro de a,b=x,y. e mantem soma como nome da função.
+	somanumeros = a + b;
+	printf ("\tA soma de %i + %i e igual a: %i\n",a,b,somanumeros); //sintaxe para chamar variavel no printf. é sequencial a cada % que vc coloca entre ",para depois cama-las.
+return somanumeros; //retorno somanumeros para obter a resposta do tipo int.
+}
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+Utilizando a mesma FUNÇÃO mas por PARÂMETRO.
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+int main (void){
+	
+	
+setlocale (LC_ALL, "portuguese");
+
+int a=3,b=5;
+
+	int soma(int a,int b); //Declaro a função
+
+	soma (a,b);//Chamo a função.
+
+
+
+
+
+
+system ("pause");
+
+return 0;
+}
+int somanumeros;
+int soma (int x,int y){ //parametro de a,b=x,y. e mantem soma como nome da função.
+	somanumeros = x + y;
+	printf ("\tA soma de %i + %i e igual a: %i\n",x,y,somanumeros); //sintaxe para chamar variavel no printf. é sequencial a cada % que vc coloca entre ",para depois cama-las.
+return somanumeros; //retorno somanumeros para obter a resposta do tipo int.
+}

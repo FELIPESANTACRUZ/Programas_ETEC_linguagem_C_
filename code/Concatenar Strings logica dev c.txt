@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+
+
+														/*CONCATENAR STRINGS / LÓGICA */
+int main (void){
+	
+setlocale (LC_ALL, "portuguese");
+
+void concatenarstrings(char string1[],int t1,
+					   char string2[],int t2,
+					   char string3[]);
+						
+char palavra1[]= {'p','a','o',' '}; //não e necessário declarar o tamanho do vetor quando vc declara entre "{" "}" os caracteres ou numeros dele,o programa conta sozinho.
+char palavra2[]={'m','o','t','a','d','e','l','a'};
+char novapalavra[13]; //como não foi declarados valor nem caractere ao meu vetor então precisa declarar o tamanho entre "[" "]".
+int i;
+
+
+	concatenarstrings(palavra1,4,palavra2,9,novapalavra); //minha função aqui chama como parametro a string1 e declara a quantidades de characters dela.
+														   // chama como parametro tambem a string2 e declara a quantidade de characters dela.
+			//e chama a nova palavra sem declarar o tamanho pois ja foi declarado na funçao main "tamanho[13] characters" ,que vai receber string1 e string2. 
+	for (i=0;i < 13;++i){
+		printf ("%c",novapalavra[i]);
+	}
+
+
+
+system("pause");
+
+return 0;
+
+}
+
+	void concatenarstrings(char string1[],int t1,
+						    char string2[],int t2,
+						    char string3[]){
+							
+	int i,j;
+	
+	for (i=0;i < t1;++i){ //t1=tamanho da variavel string1.
+		string3[i] = string1[i];//string3=novapalavra recebe a string1 na posição "i" que é igual a "p" e recebe todos os characters da posição ,t1=tamanho da string.
+		for (j=0;j < t2;++j){//t2=tamanho da variavel string2.
+			string3[t1+ j] = string2[j]; // string3 começa a escrever a partir do final da string1="t1", e inicializa na posição "j"que é igual 0, e zero na posição "j" é igual ao character "m".
+			
+		}
+	}
+	
+	
+}
+			

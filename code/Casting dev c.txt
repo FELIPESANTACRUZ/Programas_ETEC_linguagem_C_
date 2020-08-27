@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+														//CASTING
+int main (void){
+
+setlocale (LC_ALL, "portuguese");
+
+int x,y;
+float resultado;
+x = 16;
+y = 3;
+resultado = (float)x / y; //colocando CASTING tipo "(float)" eu retorno um valor float ao meu resultado das duas variaveis do tipo int x e y.
+
+printf ("\n%f\t",resultado); //perceba que com o float como return da minha operação de divisao o resultado fica 5,333 e nao 5,000
+
+system ("pause");
+
+return 0;
+}
