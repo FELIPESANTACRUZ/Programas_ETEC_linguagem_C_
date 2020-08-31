@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+#include<stdbool.h>
+
+														//INTRODUÇÃO A PONTEIROS.
+int main (void){
+	
+	setlocale(LC_ALL, "portugues");
+	
+	int x=10;
+	int *ponteiro;//declarei o ponteiro
+	
+	
+	ponteiro = &x; //atribui o local de espaço na memoria ao ponteiro
+				  //colocando o '&'comercial antes da variavel eu acesso nao o valor mas sim o local de espaço na memória que está alocado aquela variavel.
+	int y=20;
+	*ponteiro = 20;
+	printf ("%i\n%i", x,y); //colocando o '*' na frente eu vejo o valor da variavel,tirando ele eu vejo o local que esta armazenado na memoria
+	
+	getchar();
+	
+	return 0;
+	}

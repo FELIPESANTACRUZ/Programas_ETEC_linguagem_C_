@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (){
+																/*  Ponteiros à Estruturas(Operações Matemáticas)*/
+setlocale(LC_ALL, "portuguese");
+
+struct horario{
+	int hora;
+	int minuto;
+	int segundo;
+};
+
+struct horario agora,*depois;
+depois = &agora;
+
+depois->hora = 100;
+(*depois).minuto = 100;
+(*depois).segundo = 20;
+
+int somatorio =  50;
+
+struct horario antes;
+antes.hora=depois->hora + somatorio;
+antes.minuto=agora.hora + depois->minuto;
+antes.segundo=depois->minuto - depois->segundo;
+
+printf ("%i:%i:%i\n",antes.hora,antes.minuto,antes.segundo);
+	
+
+	
+getchar();
+	
+	return 0;
+}

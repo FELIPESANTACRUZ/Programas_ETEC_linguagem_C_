@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include<locale.h>
+#include<stdbool.h>
+
+														//INTRODUÇÃO A PONTEIROS.
+int main (void){
+	
+	setlocale(LC_ALL, "portuguese");
+	
+	
+									/*Formas de declarar ponteiro
+									int x=10
+									int *px; delacrei o tipo do ponteiro 'int',e declarei o nome de meu ponteiro 'px'
+									px = &x; atribui o meu ponteiro px para o local de memoria de minha variavel int.
+									*/
+								//	OU ENTAO
+									/*
+									int *px = &x;
+									*/
+				//com o '*' serve tanto para declarar um ponteiro como para acessar o valor da variavel. sem o ponteiro serve para acessar o local na memória.
+	int x=10;
+	double y=20.50;
+	char z='a';
+	
+	int *px = &x;
+	double *py = &y;
+	char *pz = &z;
+	
+	double soma = *px + *py;
+	
+	printf ("A Soma de %i + %f é =%f",*px,*py,(double)soma); //chamei com o '*' ou seja o valor da variaveis x e y e somei as duas. coloquei um casting para retornar um valor de tipo double.
+	
+	/* Colocando manualmente o local de endereço da memoria da variavel.
+	int *resultado;
+	resultado = 6487548;
+	printf ("Valor x = %i", *resultado); 
+	*/
+
+	/*
+	sintaxe de printf com ponteiros ,diferença de local de memória e valor.
+	printf ("Endereço X = %i\t VALOR X = %i\n",px,*px); //perceba que sem o'*' é o endereço e com o '*' é o valor.
+	printf ("Endereço Y = %i\t VALOR Y = %f\n",py,*py);//perceba que sem o'*' é o endereço e com o '*' é o valor. //perceba que sempre para achar o local de memoria chamasse com'%i' mesmo sendo de outro tipo a variavel.
+	printf ("Endereço Z = %i\t VALOR Z = %c\n",pz,*pz);//perceba que sem o'*' é o endereço e com o '*' é o valor.//perceba que sempre para achar o local de memoria chamasse com'%i' mesmo sendo de outro tipo a variavel.
+	*/
+	
+	
+	
+	getchar();
+	
+	return 0;
+	}

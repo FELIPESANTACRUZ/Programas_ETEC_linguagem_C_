@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void){
+	
+setlocale (LC_ALL, "portuguese");
+
+
+
+/*short x=21474836347; //short = variavel que armazena menos bits do que do tipo int.se ultrapassar determinado valor usar variavel do tipo int.
+short y=-21474836348;  //perceba que nao armazena esse numero,ssó se for numeros bem menores que a esse.
+*/
+/*int x=2147483647;	// esse numero de miha variavel é o maximo de bits de uma variavek de tipo int.se ultrapassar usar variavel do tipo long int	.
+int y=-2147483647; 
+*/
+long int x=2147483647;	
+long int y=-2147483648;	//variavel maior que armazena mais espaço na memoria do que int.
+
+printf ("%i%\ni\n",x,y);
+
+
+	getchar();
+	
+	return 0;
+}

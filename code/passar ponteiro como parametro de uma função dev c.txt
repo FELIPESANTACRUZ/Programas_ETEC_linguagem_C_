@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main (void){
+									//PASSAR PONTEIROS COMOPARÂMETRO DE UMA FUNÇÃO.
+setlocale(LC_ALL, "portuguese");	
+	
+	void testevariavel(int x);
+	void testeponteiro(int *px);
+	int teste = 1;
+	int *pteste = &teste;
+	
+	printf ("%i\n",teste);
+	testevariavel(teste);
+	testeponteiro(pteste); //coloquei 'pteste' sem o asterisco pois eu quero saber o local de memória e nao o valor da variavel.
+	
+	getchar();
+	
+	return 0;
+}
+void testevariavel(int x){
+	++x;
+	printf ("%i\n",x); //passei a variavel teste como funcao passando o valor dela.
+}
+
+void testeponteiro(int *px){
+	++*px;
+	printf ("%i",*px);
+}	
